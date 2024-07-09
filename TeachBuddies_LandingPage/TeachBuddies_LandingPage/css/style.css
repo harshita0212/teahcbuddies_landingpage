@@ -622,7 +622,7 @@ hr.border {
 .features_section {
     width: 100%;
     float: left;
-    background-image: url(../images/features-bg.png);
+    background-image: url(../images/small-banner.jpg);
     height: auto;
     background-size: cover;
     padding: 90px 0px;
@@ -723,6 +723,9 @@ hr.border {
     width: 100%;
     float: left;
     padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .client_box {
