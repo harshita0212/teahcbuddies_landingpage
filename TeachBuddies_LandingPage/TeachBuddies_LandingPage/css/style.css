@@ -245,8 +245,10 @@ button {
 }
 
 .navbar-brand {
-    width: 10%;
+    width: 25%;
 }
+
+
 
 .navbar {
     padding: 15px 0px;
