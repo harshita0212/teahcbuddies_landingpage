@@ -142,7 +142,7 @@ a,
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -428,7 +428,7 @@ hr.border {
 .services_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 30px;
     color: #232222;
     font-weight: bold;
 }
@@ -811,7 +811,7 @@ hr.border {
 .contact_section {
     width: 100%;
     float: left;
-    background-color: #02a763;
+    background-color: #1b9e5f;
     height: auto;
     padding: 90px 0px;
 }
