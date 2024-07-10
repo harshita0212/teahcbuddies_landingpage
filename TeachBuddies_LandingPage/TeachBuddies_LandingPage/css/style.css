@@ -105,6 +105,12 @@ h6 a {
     opacity: 1
 }
 
+/* navbar-brand1 {
+    max-width: 30%;
+    height: auto;
+      
+} */
+
 button:focus {
     outline: none;
 }
