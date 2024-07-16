@@ -71,54 +71,86 @@
       </div>
       <!-- header section end -->
        <!-- contact section start -->
-       <div class="contact_section layout_padding">
+      <div class="contact_section layout_padding">
          <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="contact_taital">CONNECT WITH US</h1>
-               </div>
-            </div>
-            <div class="contact_section_2">
-               <div class="row">
-                  <div class="col-md-8">
-                     <div class="mail_section map_form_container">
-                        <form action="">
-                           <div class="row">
-                              <div class="col-md-6">
-                                 <input type="text" class="mail_text" placeholder="Your Name" name="Your Name">
-                              </div>
-                              <div class="col-md-6">
-                                 <input type="text" class="mail_text" placeholder="Email" name="Email">
-                              </div>
-                              <div class="col-md-6">
-                                 <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number">
-                              </div>
-                              <div class="col-md-6">
-                                 <input type="text" class="mail_text" placeholder="Subject" name="Subject">
-                              </div>
-                           </div>
-                           <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="Message"></textarea>
-                           <div class="btn_main">
-                              <div class="send_bt active"><a href="#">Send</a></div>
-                           </div>
-                        </form>
+             <div class="row">
+                 <div class="col-md-12">
+                     <h1 class="contact_taital">CONNECT WITH US</h1>
+                 </div>
+             </div>
+             <div class="contact_section_2">
+                 <div class="row">
+                     <div class="col-md-8">
+                         <div class="mail_section map_form_container">
+                             <form method="POST" name="google-sheet">
+                                 <div class="row">
+                                     <div class="col-md-6">
+                                         <input type="text" class="mail_text" placeholder="Your Name" name="Your Name">
+                                     </div>
+                                     <div class="col-md-6">
+                                         <input type="text" class="mail_text" placeholder="Email" name="Email">
+                                     </div>
+                                     <div class="col-md-6">
+                                         <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number">
+                                     </div>
+                                     <div class="col-md-6">
+                                         <input type="text" class="mail_text" placeholder="Subject" name="Subject">
+                                     </div>
+                                 </div>
+                                 <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="Message"></textarea>
+                                 <div class="btn_main">
+                                     <button type="submit" class="send_bt">SEND</button>
+                                 </div>
+                             </form>
+                             <script>
+                                 const scriptURL = 'https://script.google.com/macros/s/AKfycbwday-KqcGuQL_erstrFO24hPUTAnLjkmC4Cf393x0O1GZjUA3FLMvwmnRJJ1PpReEr/exec'
+                                 const form = document.forms['google-sheet']
+               
+                                 form.addEventListener('submit', e => {
+                                     e.preventDefault()
+                                     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                     .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                                     .catch(error => console.error('Error!', error.message))
+                                 })
+                             </script>
+                             <style>
+                                 .send_bt {
+                                     display: inline-block;
+                                     padding: 10px 20px;
+                                     font-size: 25px;
+                                     font-weight: bold;
+                                     color: #080808;
+                                     background-color: #fff;
+                                     border: none;
+                                     border-radius: 5px;
+                                     text-align: center;
+                                     text-decoration: none;
+                                     transition: background-color 0.3s ease;
+                                 }
+     
+                                 .send_bt:hover {
+                                     background-color: #005000; /* Dark green */
+                                     color: #fff; /* Change text color to white for better contrast */
+                                 }
+                             </style>
+                         </div>
                      </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="contact_img"><img src="images/video.png"></div>
-                  </div>
-               </div>
-            </div>
+                     <div class="col-md-4">
+                         <div class="contact_img"><img src="images/video.png"></div>
+                     </div>
+                 </div>
+             </div>
          </div>
-      </div>
-      <!-- contact section end -->
+     </div>
+     
+           <!-- contact section end -->
       <!-- footer section start -->
       <!-- footer section start -->
       <div class="footer_section layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-lg-3 col-sm-6">
-                  <h3 class="useful_text">Our Company</h3>
+                  <h3 class="useful_text">Quick Links</h3>
                   <div class="footer_menu">
                      <ul>
                         <li><a href="index.html">Home</a></li>
