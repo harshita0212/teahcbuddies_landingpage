@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .terms-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .terms-container h1 {
+            font-size: 2.5em;
+            color: #004085;
+            margin-bottom: 10px;
+        }
+
+        .terms-container p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .terms-container h2 {
+            color: #004085;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .terms-content {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+        .terms-content p {
+            margin-bottom: 15px;
+        }
+
+        .terms-container .terms-image {
+            float: right;
+            margin-left: 20px;
+            max-width: 200px;
+        }
+
+        /* Back to Top Button */
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #004085;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #backToTopBtn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="terms-conditions" class="terms-container">
+        <h1>Terms & Conditions</h1>
+        <p>So you think you are at the right place? If yes, every collaboration has its own terms of use. Here’s our terms and conditions.</p>
+        <div class="terms-content">
+            <h2>Terms of Use</h2>
+            <p>Your use of Unstop’s products, software, services and websites (referred to collectively as the “Services” in this document) is subject to the terms of a legal agreement between you and Unstop. Please read the following terms and conditions very carefully as your use of services is subject to your acceptance of and compliance with the following terms and conditions ("Terms").</p>
+            <p>By subscribing to or using any of our services, you agree that you have read, understood and are bound by the Terms, regardless of how you subscribe to or use the services. If you do not want to be bound by the Terms, you must not subscribe to or use our services.</p>
+            <p>In these Terms, references to "you", "User", "Visitor” shall mean the end user accessing the Website, its contents and using the Services offered through the Website, and "we", "us" and "our" shall mean Unstop.com and its affiliates.</p>
+        </div>
+        <img src="path/to/your/image.png" alt="Terms and Conditions Image" class="terms-image">
+    </div>
+
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Back to Top</button>
+
+    <script>
+        // Back to Top Button
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
